@@ -129,11 +129,9 @@ function CFAHub:DraggingEnabled(frame, parent)
 end
 
 local GuiName = "CFAHubPremium2022"
-
 function CFAHub:CreateWindow(title, gameName, intro)
     title = title or "<font color=\"#1CB2F5\">CFA Hub Premium</font>"
     gameName = gameName or "N/A"
-
     for _, v in pairs(CoreGui:GetChildren()) do
         if v:IsA("ScreenGui") and v.Name == GuiName then
             v:Destroy()
@@ -141,7 +139,7 @@ function CFAHub:CreateWindow(title, gameName, intro)
     end
 
 local keybind = keybind or Enum.KeyCode.RightControl
-local uihide = false
+local uihide = true
 local abc = false
 yoo = string.gsub(tostring(keybind),"Enum.KeyCode.","")
 
@@ -157,7 +155,7 @@ yoo = string.gsub(tostring(keybind),"Enum.KeyCode.","")
         ScrollBar = Color3.fromRGB(149, 149, 149),
         NotiBackground = Color3.fromRGB(0, 0, 0),
         Glow = Color3.fromRGB(79, 195, 247),
-        Logo = "rbxassetid://7409401226"
+        Logo = "rbxassetid://13907765704"
     }
 
     table.insert(CFAHub, title)
