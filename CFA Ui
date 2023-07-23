@@ -140,6 +140,12 @@ function CFAHub:CreateWindow(title, gameName, intro)
         end
     end
 
+local keybind = keybind or Enum.KeyCode.RightControl
+local uihide = false
+local abc = false
+yoo = string.gsub(tostring(keybind),"Enum.KeyCode.","")
+
+
     local themes = {
         SchemaColor = Color3.fromRGB(79, 195, 247),
         TextColor = Color3.fromRGB(255, 255, 255),
