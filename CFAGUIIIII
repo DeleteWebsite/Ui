@@ -141,7 +141,7 @@ function CFAHub:CreateWindow(title, gameName, intro)
 local keybind = keybind or Enum.KeyCode.RightControl
 local uihide = true
 local abc = false
-yoo = string.gsub(tostring(keybind),"Enum.KeyCode.","")
+yoo = string.gsub(tostring(keybind),"Enum.KeyCode.RightControl","")
 
 
     local themes = {
